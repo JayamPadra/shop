@@ -1,0 +1,17 @@
+﻿@model IEnumerable<ShopCham.Models.Product>
+<div class="nn-block">
+    <div class="nn-megamenu-sidebar-title"><i class="glyphicon glyphicon-list"></i><h2>Sale Off</h2></div>
+    @foreach (var p in Model)
+    {
+        <div class="nn-megamenu-sidebar">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="col-md-3"></span>
+                        <h5 class="col-md-9">@p.Name</h5>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    }    
+</div>
